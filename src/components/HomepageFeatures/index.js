@@ -6,8 +6,13 @@ import Link from '@docusaurus/Link';
 const FeatureList = [
   {
     title: 'Leçons',
-    Svg: require('@site/static/img/justice.svg').default,
+    Svg: require('@site/static/img/think.svg').default,
     to: '/docs/L0/accueil',
+  },
+  {
+    title: 'Ressources',
+    Svg: require('@site/static/img/link.svg').default,
+    to: '/ressources/intro',
   },
   {
     title: 'Activités',
@@ -18,7 +23,7 @@ const FeatureList = [
 
 function Feature({Svg, title, description, to}) {
   return (
-    <div className={clsx('col col--5')}>
+    <div className={clsx('col col--4')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>

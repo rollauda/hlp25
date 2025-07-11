@@ -10,20 +10,20 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'DGEMC',
+  title: 'Première HLP Philosophie',
   tagline: 'Rolland Auda, La Condamine, Quito, 2025-2026',
-  favicon: 'img/droit.svg',
+  favicon: 'img/philo.svg',
 
   // Set the production url of your site here
   url: 'https://profauda.fr',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/dgemc25/',
+  baseUrl: '/hlp25/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'rollauda', // Usually your GitHub org/user name.
-  projectName: 'dgemc25', // Usually your repo name.
+  projectName: 'hlp25', // Usually your repo name.
   trailingSlash: false, 
 
   onBrokenLinks: 'throw',
@@ -77,6 +77,15 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'ressources',
+        path: 'ressources',
+        routeBasePath: 'ressources',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'activites',
         path: 'activites',
         routeBasePath: 'activites',
@@ -85,16 +94,26 @@ const config = {
     ],
   ],
 
+  themes: ['@docusaurus/theme-mermaid'],
+
+  // Active le support de Mermaid pour le Markdown
+  markdown: {
+    mermaid: true,
+  },
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      mermaid: {
+        theme: {light: 'neutral', dark: 'forest'},
+      },
       navbar: {
-        title: 'dgemc-conda',
+        title: 'HLP-conda',
         logo: {
-          alt: 'dgemc',
-          src: 'img/justice.svg',
+          alt: 'HLP',
+          src: 'img/philo.svg',
         },
         items: [
           {
@@ -103,6 +122,12 @@ const config = {
             position: 'left',
             label: 'Leçons',
             docsPluginId: 'docs',
+          },
+          {
+            to: '/ressources/intro', // Pointe vers le fichier intro.md
+            label: 'Ressources', 
+            position: 'left',
+            activeBaseRegex: `/ressources/`, // Pour mettre en surbrillance l'élément actif
           },
           {
             to: '/activites/intro', // Pointe vers le fichier intro.md

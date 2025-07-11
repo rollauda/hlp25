@@ -10,7 +10,7 @@
   --ifm-color-primary-lightest: #34d399; /* Le plus clair */
   
   /* Background et couleurs de base */
-  --ifm-background-color: #f7f5e5; /* Blanc cassé verdâtre */
+  --ifm-background-color: #fafbfa; /* Blanc cassé verdâtre */
   --ifm-font-color-base: #1f2937; /* Gris foncé pour le texte */
   --ifm-navbar-link-color: #ffffff; /* Liens blancs sur navbar verte */
   --ifm-navbar-link-hover-color: #ecfdf5; /* Hover vert très clair */
@@ -36,7 +36,7 @@
 .theme-layout-navbar,
 .navbar,
 .navbar__inner {
-  background-color: #606c38 !important;
+  background-color: #036948 !important; 
   opacity: 1 !important;
   backdrop-filter: none !important;
 }
@@ -66,11 +66,11 @@
 
 /* Footer avec vert sauge */
 .footer {
-  background-color: #606c38 !important; /* Vert sauge */
+  background-color: #036948 !important; /* Vert sauge */
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
   font-size: 0.80rem !important;
-  border-top: 3px solid #606c38; /* Bordure accent */
+  border-top: 3px solid #047857; /* Bordure accent */
 }
 
 /* Texte et liens footer en blanc */
