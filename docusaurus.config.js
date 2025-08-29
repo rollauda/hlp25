@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/philo.svg',
 
   // Set the production url of your site here
-  url: 'https://hlp1profauda.fr',
+  url: 'https://hlp1.profauda.fr',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
