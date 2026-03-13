@@ -7,7 +7,10 @@ id: accueil
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::tip[Activité du second semestre : écriture d'un journal philosophique]
-Après chaque leçon du second semestre sur les "Représentation du monde", vous écrirez votre journal philosophique. *En littérature et en philosophie, un journal est un récit autobiographique dans lequel l'auteur écrit ses pensées, ses expériences, ses sentiments*.   
+Après chaque leçon du second semestre sur les "Représentation du monde", vous écrirez votre journal philosophique. 
+
+*En littérature et en philosophie, un journal est un récit autobiographique dans lequel l'auteur écrit ses pensées, ses expériences, ses sentiments*.   
+
 **Première entrée du journal : "Le monde selon moi"**.  
 
 **CONSIGNE** : après avoir travaillé les textes de la leçon, vous écrirez deux textes racontant l'origine du monde selon vous :    
